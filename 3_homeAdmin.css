@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --purple:#8e44ad;
+   --red:#c0392b;
+   --orange:#f39c12;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background-color: var(--light-bg);
+}
+
+section{
+   padding:3rem 2rem;
+}
+
+.tieude{
+   position: sticky;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+}
+
+.tieude .flex{
+   display: flex;
+   align-items: center;
+   padding:2rem;
+   justify-content: space-between;
+   position: relative;
+   max-width: 1200px;
+   margin:0 auto;
+}
+
+.tieude .flex .logo{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+
+.tieude .flex .logo span{
+   color:#CC33CC;
+}
+
+.tieude .flex .thanhDH a
+{
+   margin:0 1rem;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.tieude .flex .taikhoan{
+   
+   top:120%; right:2rem;
+   text-align: center;
+   font-size: 1.5rem;
+
+   
+ }
+
+ .tieude .flex .taikhoan p span{
+   color:#CC33CC;
+}
+
+.tieude .flex .taikhoan a
+{
+   color:#0000FF;
+}
+
+
+/* =================================================================================================== */
+
+.bangdieukhien .khunghop{
+   display: grid; /* dạng lưới */
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* 25rem=250px  */ 
+   /* định nghĩa số lượng và kích thước của các cột trong một lưới (grid) */
+   gap:1.5rem; /* khoảng cách giữa các ô */
+   max-width: 1000px; /* giới hạn khích thước */
+   /* box-shadow: var(--box-shadow); */
+   margin:0 auto;/* được sử dụng để thiết lập khoảng trống xung quanh */
+   align-items: flex-start;
+}
+
+
+
+.bangdieukhien .khunghop .hop{
+   border-radius: .5rem;
+   padding:2rem;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border:var(--border); /* tạo viền */
+   text-align: center;
+}
+
+.bangdieukhien .khunghop .hop h3{
+   font-size: 5rem;
+   color:var(--black); 
+}
+
+.bangdieukhien .khunghop .hop p {
+   margin-top: 1.5rem;
+   padding:1.5rem;
+   background-color: var(--light-bg);
+   color:var(--purple);
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   border:var(--border);
+}
+
+/* ============================================================================================== */
+.title /* cỡ chữ tiêu đề */
+{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color:var(--black);
+   font-size: 4rem;
+}

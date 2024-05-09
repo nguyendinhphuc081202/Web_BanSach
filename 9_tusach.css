@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --purple:#8e44ad;
+   --red:#c0392b;
+   --orange:#f39c12;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+
+
+
+/* ============================================================================================================== */
+.products .khungbieumau{
+   max-width: 1200px;
+   margin:0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 30rem);
+   align-items: flex-start;
+   gap:1.5rem;
+   justify-content: center;
+}
+
+.products .khungbieumau .hop{
+   border-radius: 1rem;
+   background-color: var(--white);
+   width: 30rem;
+   box-shadow: var(--box-shadow);
+   padding:2rem;
+   text-align: center;
+   border:var(--border);
+   position: relative;
+}
+
+.products .khungbieumau .hop .image{
+   height: 30rem;
+}
+
+.products .khungbieumau .hop .name{
+   padding:1rem 0;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.products .khungbieumau .hop .qty{
+   width: 100%;
+   padding:1.2rem 1.4rem;
+   border-radius: .5rem;
+   border:var(--border);
+   margin:1rem 0;
+   font-size: 2rem;
+}
+
+.products .khungbieumau .hop .price{
+  /*  position: absolute; */
+   
+   border-radius: .5rem;
+   padding:1rem;
+   font-size: 2.5rem;
+   color:#EE4000;
+   
+}
+
+
+/* =========================================================================================== */
+ .in4SP p
+{
+   margin-left: 380px;
+   padding:1rem 0;
+   font-size: 1.7rem;
+   color:var(--light-color);
+}
+
+
+.in4SP p span
+{
+
+   color:var(--purple);
+}
+
+ .in4SP form  img
+{
+   float: left;
+   position: sticky;
+   height: 40rem;
+   margin-bottom: 0.5rem;
+   min-height: 75vh;
+}
+
+.in4SP   .obtn
+{
+    position: absolute;
+   margin-top: 1rem;
+   margin-left: 25rem; /* 1rem=16px */
+   padding:1rem 3rem;
+   cursor: pointer; /* con trỏ chuột */
+   color:var(--white);
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   background-color: var(--red);
+
+}
+
+.in4SP{
+   min-height: 100vh;
+   background-color: rgba(0,0,0,.7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:2rem;
+   overflow-y: scroll;
+   position: fixed;
+   top:0; left:0; 
+   z-index: 1200;
+   width: 100%;
+   height: 100%;
+}
+
+.in4SP form{
+   width: 100rem;
+   height: 60rem;
+   padding:2rem;
+
+   /* text-align: center; */
+   border-radius: .5rem;
+   background-color: var(--white);
+}
+
+
+.in4SP form .hop
+{
+
+   margin:1rem 0;
+   padding:1.2rem 1.4rem;
+   border:var(--border);
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   font-size: 1.9rem;
+   color:var(--black);
+   width: 100%;
+
+}
